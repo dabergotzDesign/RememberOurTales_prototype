@@ -58,6 +58,16 @@ const lenis = new Lenis({
 /* top nav */
 const nav = document.querySelector('.navigation div');
 const navLogo = document.querySelector('.nav__logo');
+const nav_submenu = document.querySelectorAll('.submenu ul');
+
+const navArchive = document.querySelector('.nav__archive'),
+    navContribute  = document.querySelector('.nav__contribute'),
+    navService = document.querySelector('.nav__service');
+
+
+
+const navSearchButton = document.querySelector('.searchbar__toggle');
+const navSearchBar = document.querySelector('.searchbar__container');
 
 const setNavState = () => {
   const scrolledPastThreshold = window.scrollY > 10;
@@ -69,16 +79,81 @@ const setNavState = () => {
   if (navLogo) {
     navLogo.style.width = scrolledPastThreshold ? '12vw' : '';
   }
+
+  if(navSearchButton){
+    navSearchButton.style.top = scrolledPastThreshold ? '8%' : '';
+  }
+
+  if(navSearchBar){
+    navSearchBar.style.top = scrolledPastThreshold ? '64%' : '';
+  }
 };
 
 window.addEventListener('scroll', setNavState, { passive: true });
 window.addEventListener('load', setNavState);
 
-/* protoype modal */
-let modal = document.querySelector(".prototype__info");
-let btnStart = document.querySelector(".info__text button");
+/* submenu */
+navArchive.addEventListener("mouseenter", ()=>{
+    nav_submenu[0].style.height = '100%';
+    nav_submenu[1].style.height = '0';
+    nav_submenu[2].style.height = '0';
+});
+nav_submenu[0].addEventListener("mouseleave", ()=>{
+    nav_submenu[0].style.height = '0';
+});
 
-btnStart.onclick = function(){
-    modal.style.display = "none";
-}
+navContribute.addEventListener("mouseenter", ()=>{
+    nav_submenu[1].style.height = 'max-content';
+    nav_submenu[0].style.height = '0';
+    nav_submenu[2].style.height = '0';
+});
+nav_submenu[1].addEventListener("mouseleave", ()=>{
+    nav_submenu[1].style.height = '0';
+});
 
+
+navService.addEventListener("mouseenter", ()=>{
+    nav_submenu[2].style.height = 'max-content';
+    nav_submenu[0].style.height = '0';
+    nav_submenu[1].style.height = '0';
+});
+nav_submenu[2].addEventListener("mouseleave", ()=>{
+    nav_submenu[2].style.height = '0';
+});
+
+
+/* search bar */
+const searchToggle = document.querySelector(".searchbar__toggle"),
+        searchBar = document.querySelector(".searchbar__container"),
+        searchClose = document.querySelector(".searchbar__close"),
+        searchInput = document.querySelector("#search-input").value,
+        searchForm = document.querySelector("#searchbar__form"),
+        searchLink = document.querySelector(".searchbar__submit a"),
+        searchSubmit = document.querySelector(".searchbar__submit");
+
+
+searchClose.addEventListener("click",()=>{
+    if(searchBar.classList.contains("search")){
+        searchBar.classList.remove("search");
+        searchToggle.style.display = "block";
+    }
+});
+
+searchToggle.addEventListener("click",()=>{
+    if(!searchBar.classList.contains("search")){
+        searchBar.classList.add("search");
+        searchToggle.style.display = "none";
+    }
+});
+
+
+searchSubmit.addEventListener("click", ()=>{
+    
+    if(searchInput.value == "Alfred J. Sterling"){
+        searchLink.setAttribute("href", "../pages/search_result.html");
+    }
+    else{
+        searchLink.setAttribute("href", "../pages/no_result_search.html");
+    }
+
+});
