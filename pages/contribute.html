@@ -152,8 +152,7 @@
                   <div style="display: flex;flex-direction: column;row-gap: 8px;align-items: start;justify-content: flex-start;position: relative;">
                     <div style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-shrink: 0;"><span class="text" style="display: inline;text-align: left;line-height: 20px;font-size: 16px;font-family: Inter, system-ui, sans-serif;font-weight: 500;font-stretch: 100%;color: #6a427b;width: 100%;position: relative;flex-shrink: 0;">Vollständiger Name der Person</span></div>
                     <div style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-shrink: 0;">
-
-                      <input type="text" class="form__input" placeholder="z.B. Eleanor Vance">
+                      <input id="p1__name" type="text" class="form__input" placeholder="z.B. Eleanor Vance">
                     </div>
                   </div>
                   
@@ -161,23 +160,34 @@
                     <div style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-shrink: 0;"><span class="text" style="display: inline;text-align: left;line-height: 20px;font-size: 16px;font-family: Inter, system-ui, sans-serif;font-weight: 500;font-stretch: 100%;color: #6a427b;width: 100%;position: relative;flex-shrink: 0;">Datum der Geburt und des Ablebens</span></div>
                     <div style="display: flex;flex-direction: row;grid-column-gap: 16px;align-items: center;justify-content: flex-start;width: 100%;position: relative;flex-shrink: 0;">
                       <div style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-grow: 1;flex-basis: 0px;">
-                        <div style="border-width: 0px 0px 1px;border-style: solid;border-color: #2d2e32;background-color: #fcfbf9;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;position: relative;flex-shrink: 0;padding: 8px 0px 8px 16px;margin: 0px 0px -1px;"><span class="text" style="display: inline;text-align: left;line-height: 20px;font-size: 16px;font-family: Inter, system-ui, sans-serif;font-weight: 400;font-stretch: 100%;font-style: italic;letter-spacing: 0.6px;color: #999997;width: max-content;position: relative;flex-shrink: 0;">Tag/Monat/Jahr</span></div>
+                        <input id="p1__date-birth" type="text" class="form__input" placeholder="Tag/Monat/Jahr">
                       </div>
                       <div style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: min-content;opacity: 0.5;position: relative;flex-shrink: 0;"><svg width="16" height="1.296875" viewBox="0 0 16 1.296875" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="width: 16px;height: 1.3px;position: relative;flex-shrink: 0;"> <path d="M16 0V1.2969H0V0H16V0" style="fill-rule: nonzero;fill: #895695;"></path> </svg></div>
                       <div style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-grow: 1;flex-basis: 0px;">
-                        <div style="border-width: 0px 0px 1px;border-style: solid;border-color: #2d2e32;background-color: #fcfbf9;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;position: relative;flex-shrink: 0;padding: 8px 0px 8px 16px;margin: 0px 0px -1px;"><span class="text" style="display: inline;text-align: left;line-height: 20px;font-size: 16px;font-family: Inter, system-ui, sans-serif;font-weight: 400;font-stretch: 100%;font-style: italic;letter-spacing: 0.6px;color: #999997;width: max-content;position: relative;flex-shrink: 0;">Tag/Monat/Jahr</span></div>
+                        <input id="p1__date-passing" type="text" class="form__input" placeholder="Tag/Monat/Jahr">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="display: flex;flex-direction: column;row-gap: 8px;align-items: start;justify-content: flex-start;position: relative;grid-column: span 2;">
+                    <div style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-shrink: 0;"><span class="text" style="display: inline;text-align: left;line-height: 20px;font-size: 16px;font-family: Inter, system-ui, sans-serif;font-weight: 500;font-stretch: 100%;color: #6a427b;width: 100%;position: relative;flex-shrink: 0;">Adressen der Geburt und des Ablebens (Stadt und Land genügen)</span></div>
+                    <div style="display: flex;flex-direction: row;grid-column-gap: 16px;align-items: center;justify-content: flex-start;width: 100%;position: relative;flex-shrink: 0;">
+                      <div style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-grow: 1;flex-basis: 0px;">
+                        <input id="p1__date-birth" type="text" class="form__input" placeholder="z.B. Berlin, Deutschland">
+                      </div>
+                      <div style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: min-content;opacity: 0.5;position: relative;flex-shrink: 0;"><svg width="16" height="1.296875" viewBox="0 0 16 1.296875" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="width: 16px;height: 1.3px;position: relative;flex-shrink: 0;"> <path d="M16 0V1.2969H0V0H16V0" style="fill-rule: nonzero;fill: #895695;"></path> </svg></div>
+                      <div style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-grow: 1;flex-basis: 0px;">
+                        <input id="p1__date-passing" type="text" class="form__input" placeholder="z.B. London, Großbritannien">
                       </div>
                     </div>
                   </div>
 
                   <div class="form__textarea" style="display: flex;flex-direction: column;row-gap: 8px;align-items: start;justify-content: flex-start;position: relative;grid-column: span 2;">
-                    <div style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-shrink: 0;"><span class="text" style="display: inline;text-align: left;line-height: 20px;font-size: 16px;font-family: Inter, system-ui, sans-serif;font-weight: 500;font-stretch: 100%;color: #6a427b;width: 100%;position: relative;flex-shrink: 0;">Das erzählerische Vermächtnis</span></div>
-                    <div class="dragScroll" style="border-width: 0px 0px 1px;border-style: solid;border-color: #4c4d51;background-color: #fcfbf9;overflow: auto;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: start;justify-content: safe center;width: 100%;position: relative;flex-shrink: 0;padding: 12px 12px 120px;">
-                      <div style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-grow: 1;flex-basis: 0px;"><span class="text" style="display: inline;text-align: left;line-height: 29.3px;font-size: 18px;font-family: Inter, system-ui, sans-serif;font-weight: 400;font-stretch: 100%;color: #999997;width: 100%;position: relative;flex-shrink: 0;">Erzählen Sie von der Person ihren Charakter, ihre Freuden, und die stillen Momente die Sie am besten beschrieb...</span></div>
-                    </div>
+                    <label for="story">Das erzählerische Vermächtnis</label>
+                    <textarea name="story" id="story" placeholder="Erzählen Sie von der Person ihren Charakter, ihre Freuden, und die stillen Momente die Sie am besten beschrieb..."></textarea>
                   </div>
 
-                  <div class="seperator__small" style="overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 8px; grid-column: span 2; align-items: center;justify-content: center;width: 100%;position: relative;flex-shrink: 0;padding: 24px 32px;">
+                  <div class="seperator__small" style="overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 8px; grid-column: span 2; align-items: center;justify-content: center;width: 100%;position: relative;flex-shrink: 0;">
                       <div id="Line_1" style="overflow: hidden;padding: 1px 0px 0px;width: 96px;height: 1px;opacity: 0.25;position: relative;flex-shrink: 0;margin: -1px 0px 0px;"></div>
                       <div style="overflow: hidden;aspect-ratio: 0.67;width: auto;height: 36px;opacity: 0.25;position: relative;flex-shrink: 0;">
                           <div style="overflow: hidden;left: 0px;top: 0px;right: 0.1%;bottom: 0.1%;width: 99.9%;height: 99.9%;position: absolute;"><svg width="23.967527389526367" height="35.96559143143537" viewBox="0 0 23.967527389526367 35.96559143143537" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 0px;top: 0px;right: 0px;bottom: 0px;width: 100%;height: 100%;position: absolute;"> <path d="M5.5986 11.7488C6.1945 11.7478 5.8606 11.401 5.9415 9.7255 5.9953 8.6104 5.9118 8.6244 6.0648 7.5063 6.3052 5.7499 6.0803 4.6477 6.6372 5.285 10.4897 9.6935 9.9558 12.7373 9.9661 13.1973 10.0811 18.3026 9.6676 18.2898 9.736 18.727 10.0369 20.6489 10.5733 13.6308 10.7597 13.0242 11.4669 10.7233 11.3207 14.1821 11.3301 14.2912 11.3589 14.6243 12.2197 16.8756 12.3379 16.9911 13.1079 17.7429 12.7846 17.9328 13.3234 18.8519 14.1859 20.3231 14.0927 20.3627 14.2686 22.0594 14.6129 25.3806 14.3476 25.4509 14.5443 25.6571 15.3884 26.5421 14.2834 18.1778 15.2311 20.9632 15.3178 21.2179 15.7332 21.6462 15.9603 22.0929 17.7542 25.6216 17.0011 28.2434 17.0287 28.7017 17.1189 30.2019 22.2167 31.8763 22.5101 32.6523 23.101 34.215 23.2013 34.1504 23.9067 35.6546 24.995 37.9752 11.1851 26.8018 6.5592 19.0022 3.433 13.7312 3.644 11.621 3.3519 11.3409 2.7411 10.7552 3.7911 14.1468 3.8492 14.3094 6.1298 20.6873 8.9258 23.4132 10.1084 24.9613 13.3002 29.1395 17.0123 31.5753 15.2558 31.119 13.4072 30.6389 13.3615 30.9077 11.5549 30.3235 8.8518 29.4495 6.09 26.9747 5.1754 25.7858 3.5183 23.6317 2.4617 22.6986 0.7745 17.7879-1.8044 10.2823 2.7232-0.3983 4.6492 0.0114 6.5745 0.421 5.5035 2.8138 5.4595 5.1262 5.4388 6.2136 5.5922 11.6888 5.5987 11.7487L5.5986 11.7488Z" transform=" translate(0 7.713106958684435e-10)" style="fill-rule: evenodd;fill: #2d2e32;"></path> </svg></div>
@@ -198,7 +208,12 @@
                         </div>
                       </div>
                       <div style="display: flex;flex-direction: row;grid-column-gap: 16px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-shrink: 0;padding: 16px 0px 16px 4px;">
-                        <div style="border-width: 2px;border-style: solid;border-color: #bf82ce;background-color: #f9f8f6;aspect-ratio: 1;width: auto;height: 28px;position: relative;flex-shrink: 0;margin: -2px;"></div>
+                        
+                        <label for="p1__check" class="check">
+                          <input type="checkbox" id="p1__check">
+                          <i class="fa-solid fa-check checkmark"></i>
+                        </label>
+
                         <div style="display: flex;flex-direction: row;grid-column-gap: 10px;align-items: center;justify-content: flex-start;width: min-content;position: relative;flex-shrink: 0;"><span class="text" style="display: inline;text-align: left;line-height: 20px;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 600;font-stretch: 100%;color: #4c444e;width: 443px;position: relative;flex-shrink: 0;">Ich bestätige, dass ich rechtlich befugt bin, diese Geschichte und die Medieninhalte zu veröffentlichen, und stimme zu, dass sie in das permanente digitale Archiv von „Remember Our Tales“ aufgenommen werden.</span></div>
                       </div>
                       <div style="border-width: 0px 0px 0px 4px;border-style: solid;border-color: #895695;display: flex;flex-direction: row;grid-column-gap: 16px;align-items: center;justify-content: flex-start;width: 100%;position: relative;flex-shrink: 0;padding: 0px 0px 0px 16px;">
@@ -237,7 +252,6 @@
                   <div class="input__container" style="display: flex;flex-direction: column;row-gap: 8px;align-items: start;justify-content: flex-start;position: relative;">
                     <div class="input__label" style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-shrink: 0;"><span class="text" style="display: inline;text-align: left;line-height: 20px;font-size: 16px;font-family: Inter, system-ui, sans-serif;font-weight: 500;font-stretch: 100%;color: #6a427b;width: 100%;position: relative;flex-shrink: 0;">Ihr vollständiger Name</span></div>
                     <div class="inputfield__container" style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-shrink: 0;">
-
                       <input type="text" class="form__input" placeholder="">
                     </div>
                   </div>
@@ -289,10 +303,8 @@
                  
                   <!-- Wunsch, Kommentar -->
                   <div class="form__textarea" style="display: flex;flex-direction: column;row-gap: 8px;align-items: start;justify-content: flex-start;position: relative;grid-column: span 2;">
-                    <div style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-shrink: 0;"><span class="text" style="display: inline;text-align: left;line-height: 20px;font-size: 16px;font-family: Inter, system-ui, sans-serif;font-weight: 500;font-stretch: 100%;color: #6a427b;width: 100%;position: relative;flex-shrink: 0;">Haben Sie noch einen speziellen Wunsch für die Geschichte?</span></div>
-                    <div class="dragScroll" style="border-width: 0px 0px 1px;border-style: solid;border-color: #4c4d51;background-color: #fcfbf9;overflow: auto;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: start;justify-content: safe center;width: 100%;position: relative;flex-shrink: 0;padding: 12px 12px 120px;">
-                      <div style="display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;flex-grow: 1;flex-basis: 0px;"><span class="text" style="display: inline;text-align: left;line-height: 29.3px;font-size: 18px;font-family: Inter, system-ui, sans-serif;font-weight: 400;font-stretch: 100%;color: #999997;width: 100%;position: relative;flex-shrink: 0;"></span></div>
-                    </div>
+                    <label for="wish">Das erzählerische Vermächtnis</label>
+                    <textarea name="wish" id="wish" placeholder="Ein Anliegen seitens eines bestimmten Teil der Geschichte der Person oder der beigefügten Medien"></textarea>
                   </div>
 
                   <div class="seperator__small" style="overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 8px; grid-column: span 2; align-items: center;justify-content: center;width: 100%;position: relative;flex-shrink: 0;padding: 24px 32px;">
@@ -343,9 +355,10 @@
                   <h1 style="font-size: 32;font-family: 'Libre Baskerville';font-weight: 400;line-height: 32px;color: #55355C;">Zusammenfassung</h1>
                 </div>
 
+                <div class="data-container" style="display: flex;justify-content: space-between;align-items: flex-start;width: 100%;grid-column: span 2;">
                 <!-- Über die Person -->
-                <div class="about-the-person__container" style="display: flex;flex-direction: column;align-items: flex-start;">
-                  <div class="data__container" style="display: flex;flex-direction: column;align-content: center;gap: 16px;grid-column: span 2;">
+                <div class="about-the-person__container" style="display: flex;flex-direction: column;align-items: flex-start;flex-wrap: nowrap;flex-shrink: 0;">
+                  <div class="data__container" style="display: flex;flex-direction: column;align-content: center;gap: 8px;grid-column: span 2;">
                     <h1 class="data__heading" style="font-family: 'Inter', sans-serif;font-size: 32px;font-weight: 500;color: #55355C;">Über die Person</h1>
                     
                     <div class="info__container" style="display: flex;flex-direction: column; align-content: space-between; align-items: flex-start;justify-content: flex-start;gap: 8px;">
@@ -379,19 +392,10 @@
                   </div>
 
                 </div>
-
-                <div class="seperator__small" style="overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 8px; grid-column: span 2; align-items: center;justify-content: center;width: 100%;position: relative;flex-shrink: 0;padding: 24px 32px;">
-                      <div id="Line_1" style="overflow: hidden;padding: 1px 0px 0px;width: 96px;height: 1px;opacity: 0.25;position: relative;flex-shrink: 0;margin: -1px 0px 0px;"></div>
-                      <div style="overflow: hidden;aspect-ratio: 0.67;width: auto;height: 36px;opacity: 0.25;position: relative;flex-shrink: 0;">
-                          <div style="overflow: hidden;left: 0px;top: 0px;right: 0.1%;bottom: 0.1%;width: 99.9%;height: 99.9%;position: absolute;"><svg width="23.967527389526367" height="35.96559143143537" viewBox="0 0 23.967527389526367 35.96559143143537" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 0px;top: 0px;right: 0px;bottom: 0px;width: 100%;height: 100%;position: absolute;"> <path d="M5.5986 11.7488C6.1945 11.7478 5.8606 11.401 5.9415 9.7255 5.9953 8.6104 5.9118 8.6244 6.0648 7.5063 6.3052 5.7499 6.0803 4.6477 6.6372 5.285 10.4897 9.6935 9.9558 12.7373 9.9661 13.1973 10.0811 18.3026 9.6676 18.2898 9.736 18.727 10.0369 20.6489 10.5733 13.6308 10.7597 13.0242 11.4669 10.7233 11.3207 14.1821 11.3301 14.2912 11.3589 14.6243 12.2197 16.8756 12.3379 16.9911 13.1079 17.7429 12.7846 17.9328 13.3234 18.8519 14.1859 20.3231 14.0927 20.3627 14.2686 22.0594 14.6129 25.3806 14.3476 25.4509 14.5443 25.6571 15.3884 26.5421 14.2834 18.1778 15.2311 20.9632 15.3178 21.2179 15.7332 21.6462 15.9603 22.0929 17.7542 25.6216 17.0011 28.2434 17.0287 28.7017 17.1189 30.2019 22.2167 31.8763 22.5101 32.6523 23.101 34.215 23.2013 34.1504 23.9067 35.6546 24.995 37.9752 11.1851 26.8018 6.5592 19.0022 3.433 13.7312 3.644 11.621 3.3519 11.3409 2.7411 10.7552 3.7911 14.1468 3.8492 14.3094 6.1298 20.6873 8.9258 23.4132 10.1084 24.9613 13.3002 29.1395 17.0123 31.5753 15.2558 31.119 13.4072 30.6389 13.3615 30.9077 11.5549 30.3235 8.8518 29.4495 6.09 26.9747 5.1754 25.7858 3.5183 23.6317 2.4617 22.6986 0.7745 17.7879-1.8044 10.2823 2.7232-0.3983 4.6492 0.0114 6.5745 0.421 5.5035 2.8138 5.4595 5.1262 5.4388 6.2136 5.5922 11.6888 5.5987 11.7487L5.5986 11.7488Z" transform=" translate(0 7.713106958684435e-10)" style="fill-rule: evenodd;fill: #2d2e32;"></path> </svg></div>
-                      </div>
-                      <div id="Line_2" style="overflow: hidden;padding: 1px 0px 0px;width: 96px;height: 1px;opacity: 0.25;position: relative;flex-shrink: 0;margin: -1px 0px 0px;"></div>
-                  </div>
-
                 
                   <!-- Ihre Daten -->
                 <div class="about-the-person__container" style="display: flex;flex-direction: column;align-items: flex-start;grid-column: span 2;">
-                  <div class="data__container" style="display: flex;flex-direction: column;align-content: center;gap: 16px;">
+                  <div class="data__container" style="display: flex;flex-direction: column;align-content: center;gap: 8px;">
                     <h1 class="data__heading" style="font-family: 'Inter', sans-serif;font-size: 32px;font-weight: 500;width: 100%;color: #55355C;">Ihre Kontakt informationen</h1>
                     
                     <div class="info__container" style="display: flex;flex-direction: column; align-content: space-between; align-items: flex-start;justify-content: flex-start;gap: 8px;">
@@ -415,11 +419,14 @@
                       <div class="info__name" style="display: flex;flex-direction: column;align-items: flex-start;align-content: space-between;gap: 4px;padding: 4px 0;">
                         <div class="text data__label"><span style="font-family: 'Inter',sans-serif;font-weight: 400;color: #55355C;">Adresse</span></div>
                         <div class="text" style="font-family: 'Inter', sans-serif;color: #2d2e32;font-size: 24px;"><span>Sample Alley, 56</span></div>
+                        <div class="text" style="font-family: 'Inter', sans-serif;color: #2d2e32;font-size: 24px;"><span>PLZ 12345</span></div>
                         <div class="text" style="font-family: 'Inter', sans-serif;color: #2d2e32;font-size: 24px;"><span>London, Großbritannien</span></div>
                       </div>
 
                     </div>                 
                   </div>
+
+                </div>
 
                 </div>
 
@@ -450,7 +457,7 @@
                 
                 <div class="message__container" style="display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 24px;">
                   <img src="../images/circle-check_green.svg" alt="check">
-                  <div style="font-family: 'Libre Baskerville', serif;font-size: 48px;font-weight: 700;color: #467F42;"><span>Erfolgreich abgesendet!</span></div>
+                  <div style="text-align:center;font-family: 'Libre Baskerville', serif;font-size: 48px;font-weight: 700;color: #467F42;"><span>Erfolgreich abgesendet!</span></div>
                 </div>
 
                 <div class="message__container" style="display: flex;flex-direction: column;align-items: center;justify-content: center;gap: 24px;">
