@@ -8,11 +8,6 @@ function topFunction() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
-/* //// LENIS //// */
-// Initialize Lenis
-const lenis = new Lenis({
-  autoRaf: true,
-});
 
 /* SIDENAV */
 (() => {
@@ -126,7 +121,7 @@ nav_submenu[2].addEventListener("mouseleave", ()=>{
 const searchToggle = document.querySelector(".searchbar__toggle"),
         searchBar = document.querySelector(".searchbar__container"),
         searchClose = document.querySelector(".searchbar__close"),
-        searchInput = document.querySelector("#search-input").value,
+        searchInput = document.querySelector("#search-input"),
         searchForm = document.querySelector("#searchbar__form"),
         searchLink = document.querySelector(".searchbar__submit a"),
         searchSubmit = document.querySelector(".searchbar__submit");
@@ -147,13 +142,15 @@ searchToggle.addEventListener("click",()=>{
 });
 
 
-searchSubmit.addEventListener("click", ()=>{
-    
-    if(searchInput.value == "Alfred J. Sterling"){
-        searchLink.setAttribute("href", "../pages/search_result.html");
-    }
-    else{
-        searchLink.setAttribute("href", "../pages/no_result_search.html");
-    }
+searchSubmit.addEventListener("click", (event) => {
+    event.preventDefault();
 
+    const isInPagesDirectory = window.location.pathname.includes("/pages/");
+    const destination = searchInput.value === "Arthur J. Sterling"
+        ? "obituary.html"
+        : "no_result_search.html";
+
+    window.location.href = isInPagesDirectory
+        ? destination
+        : `pages/${destination}`;
 });
