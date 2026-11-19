@@ -587,9 +587,10 @@ svg {
   min-width: 0;
   gap: clamp(8px, 2vw, 24px);
  
-  /* position: absolute;
-  top: 25%;
-  right: 5%; */
+  @media screen and (max-width: 1440px) {
+    transform: translateX(-90vw);
+    min-width: 25%;
+  }
 
 
 }
