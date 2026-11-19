@@ -134,10 +134,19 @@ searchClose.addEventListener("click",()=>{
     }
 });
 
+/* outside 'click' of searchbar */
+document.addEventListener("click", ev =>{
+    if(!searchBar.contains(ev.target)){
+        searchBar.classList.remove("search");
+        searchToggle.style.display = "block";
+    }
+});
+
 searchToggle.addEventListener("click",()=>{
     if(!searchBar.classList.contains("search")){
         searchBar.classList.add("search");
         searchToggle.style.display = "none";
+        
     }
 });
 
