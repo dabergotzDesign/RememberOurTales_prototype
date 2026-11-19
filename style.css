@@ -579,20 +579,14 @@ svg {
 }
 
 .searchbar__input-container{
-  display: grid;
-  place-content: center;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
+  display: flex;
+  gap: 1rem;
   width: min(100%, 24vw);
+  padding: clamp(1.2rem, 2vw, 8px);
   min-width: 0;
-  gap: clamp(8px, 2vw, 24px);
- 
-  @media screen and (max-width: 1440px) {
-    transform: translateX(-90vw);
-    min-width: 25%;
-  }
 
-
+  position: fixed;
+  right: 2%;
 }
 
 .searchbar__toggle{
